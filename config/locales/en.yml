@@ -1218,7 +1218,7 @@ en:
         checkout: "Checkout now"
         already_ordered_products: "Already ordered in this order cycle"
     register_call:
-      selling_on_ofn: "Interested in getting on the Open Food Network?"
+      selling_on_ofn: "Interested in getting on the The Farmstand?"
       register: "Register here"
     footer:
       footer_secure: "Secure and trusted."
