@@ -8,7 +8,7 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   preference :logo_mobile, :file
   preference :logo_mobile_svg, :file
   has_attached_file :logo, default_url: "/assets/farmstand-logo.png"
-  has_attached_file :logo_mobile
+  has_attached_file :logo_mobile, default_url: "/assets/farmstand-logo-mobile.png"
   has_attached_file :logo_mobile_svg, default_url: "/assets/ofn-logo-mobile.svg"
 
   # Home page
@@ -52,17 +52,17 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
 
   # Footer
   preference :footer_logo, :file
-  has_attached_file :footer_logo, default_url: "/assets/ofn-logo-footer.png"
+  has_attached_file :footer_logo, default_url: "/assets/farmstand-logo.png"
 
   # Other
-  preference :footer_facebook_url, :string, default: "https://www.facebook.com/OpenFoodNet"
-  preference :footer_twitter_url, :string, default: "https://twitter.com/OpenFoodNet"
-  preference :footer_instagram_url, :string, default: "https://www.instagram.com/openfoodnetworkuk/"
-  preference :footer_linkedin_url, :string, default: "https://www.linkedin.com/company/openfoodnetwork/"
+  preference :footer_facebook_url, :string, default: "https://www.facebook.com/"
+  preference :footer_twitter_url, :string, default: "https://twitter.com/"
+  preference :footer_instagram_url, :string, default: "https://www.instagram.com//"
+  preference :footer_linkedin_url, :string, default: "https://www.linkedin.com/company//"
   preference :footer_googleplus_url, :string, default: ""
   preference :footer_pinterest_url, :string, default: ""
-  preference :footer_email, :string, default: "hello@openfoodnetwork.org"
-  preference :community_forum_url, :string, default: "http://community.openfoodnetwork.org"
+  preference :footer_email, :string, default: "mail@thefarmstand.co"
+  preference :community_forum_url, :string, default: ""
   preference :footer_links_md, :text, default: <<-EOS.strip_heredoc
     [Newsletter sign-up](/)
 
@@ -71,8 +71,8 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
     [Calendar](/)
   EOS
 
-  preference :footer_about_url, :string, default: "http://www.openfoodnetwork.org/ofn-local/open-food-network-australia/"
+  preference :footer_about_url, :string, default: ""
 
   # User Guide
-  preference :user_guide_link, :string, default: 'https://guide.openfoodnetwork.org/'
+  preference :user_guide_link, :string, default: ''
 end
